@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreativeWeb | About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Creative</span>Web Design</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current"><a href="about.html">About Us</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about-hero">
+        <div class="container">
+            <h1>Our Story, Your Success</h1>
+            <p>Discover the passionate team behind your digital transformation</p>
+            <a href="#our-team" class="button primary-btn smooth-scroll">Meet Our Team</a>
+            <a href="contact.html" class="button secondary-btn">Work With Us</a>
+        </div>
+    </section>
+
+    <section id="about-mission">
+        <div class="container">
+            <div class="mission-text">
+                <h2>Our Mission</h2>
+                <p>We exist to empower businesses through exceptional digital experiences. Our mission is to combine cutting-edge technology with human-centered design to create websites that don't just look beautiful, but drive real business results.</p>
+                <div class="mission-values">
+                    <div class="value-item">
+                        <img src="images/innovation-icon.png" alt="Innovation">
+                        <h3>Innovation</h3>
+                        <p>Pushing boundaries with creative solutions</p>
+                    </div>
+                    <div class="value-item">
+                        <img src="images/quality-icon.png" alt="Quality">
+                        <h3>Quality</h3>
+                        <p>Never compromising on excellence</p>
+                    </div>
+                    <div class="value-item">
+                        <img src="images/relationship-icon.png" alt="Relationships">
+                        <h3>Relationships</h3>
+                        <p>Building partnerships, not just projects</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mission-image">
+                <img src="images/team.jpg" alt="Our team working together">
+            </div>
+        </div>
+    </section>
+
+    <section id="our-team">
+        <div class="container">
+            <h2>Meet The Creative Minds</h2>
+            <p class="section-intro">Our diverse team of designers, developers, and strategists bring unique perspectives to every project.</p>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="images/team-member-1.png" alt="Sarah Johnson">
+                    <h3>Sarah Johnson</h3>
+                    <p class="position">Creative Director</p>
+                    <p class="bio">With 12 years in the industry, Sarah leads our design vision with an eye for detail and user experience.</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/team-member-2.png" alt="Michael Chen">
+                    <h3>Michael Chen</h3>
+                    <p class="position">Lead Developer</p>
+                    <p class="bio">Full-stack wizard who turns beautiful designs into functional realities.</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/team-member3.png" alt="David Rodriguez">
+                    <h3>David Rodriguez</h3>
+                    <p class="position">UX Specialist</p>
+                    <p class="bio">Passionate about creating intuitive interfaces that users love.</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/team-member4.png" alt="Emily Wilson">
+                    <h3>Emily Wilson</h3>
+                    <p class="position">Project Manager</p>
+                    <p class="bio">Keeps everything on track while maintaining client relationships.</p>
+                </div>
+            </div>
+            
+            <div class="team-cta">
+                <h3>Want to join our team?</h3>
+                <p>We're always looking for talented individuals to join our growing agency.</p>
+                <a href="contact.html?subject=Career Opportunity" class="button primary-btn">See Open Positions</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="client-success">
+        <div class="container">
+            <h2>Client Success Stories</h2>
+            <div class="success-story">
+                <div class="story-image">
+                    <img src="images/client-success1.png" alt="Success Story">
+                </div>
+                <div class="story-content">
+                    <h3>EcoFarms Organic</h3>
+                    <p class="results">Increased online sales by 220% in 6 months</p>
+                    <p>"CreativeWeb completely transformed our e-commerce presence. Their strategic approach to design and user experience helped us reach new customers and significantly grow our business."</p>
+                    <a href="portfolio.html" class="button secondary-btn">View Case Study</a>
+                </div>
+            </div>
+            
+            <div class="success-story reverse">
+                <div class="story-image">
+                    <img src="images/client-success2.png" alt="Success Story">
+                </div>
+                <div class="story-content">
+                    <h3>UrbanFit Gym</h3>
+                    <p class="results">Membership signups increased by 175%</p>
+                    <p>"The team understood our brand perfectly and created a website that captures our energy and professionalism. The member portal they built has been game-changing for our business."</p>
+                    <a href="portfolio.html" class="button secondary-btn">View Case Study</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-cta">
+        <div class="container">
+            <h2>Ready to Start Your Project?</h2>
+            <p>Whether you need a brand new website or want to improve your existing one, we'd love to hear about your vision.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="button primary-btn">Get in Touch</a>
+                <a href="register.html" class="button secondary-btn">Request Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>CreativeWeb Design Agency &copy; 2023</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for all links with .smooth-scroll class
+        document.querySelectorAll('.smooth-scroll').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId.startsWith('#')) {
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        // Scroll to the target element with smooth behavior
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        
+                        // Update URL without jumping
+                        if (history.pushState) {
+                            history.pushState(null, null, targetId);
+                        } else {
+                            window.location.hash = targetId;
+                        }
+                    }
+                } else {
+                    window.location.href = targetId;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
